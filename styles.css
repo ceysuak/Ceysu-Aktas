@@ -109,8 +109,8 @@ main {
 .card {
   height: 150px;
   width: 150px;
-  position: relative;        /* needed for overlay */
-  overflow: hidden;          /* keeps overlay inside card */
+  position: relative;        
+  overflow: hidden;          
   transition: transform 0.3s ease;
 }
 
@@ -141,7 +141,7 @@ main {
   text-align: center;
 }
 
-/* on hover — scale, darken, show text */
+
 .card:hover {
   transform: scale(1.05);
 }
@@ -165,21 +165,21 @@ main {
 }
 
 .card-container > .one {
-  background-image: url(assets/pictures/Ekran\ görüntüsü\ 2026-04-21\ 022548.png);
+  background-image: url(Ekran\ görüntüsü\ 2026-04-21\ 022548.png);
   background-size: cover;
    text-shadow:4px 1px 3px #1a1a1a;
   background-position: center;
 }
 
 .card-container > .two {
-  background-image: url(assets/pictures/oop.png);
+  background-image: url(oop.png);
   background-size: cover;
   background-position: center;
    text-shadow:4px 1px 3px #1a1a1a;
 }
 
 .card-container > .three {
-  background-image: url(assets/pictures/profile\ card.png);
+  background-image: url(profile\ card.png);
   background-size: cover;
   background-position: center;
   text-shadow:4px 1px 3px #1a1a1a;
