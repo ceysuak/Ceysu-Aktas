@@ -244,6 +244,9 @@ footer {
   border-radius: 1rem;
   font-weight: bold;
 }
+.detail-btn:hover{
+  opacity: 0.8;
+}
 
 .html     {
      background-color: #E34F26; 
@@ -275,6 +278,24 @@ footer {
 .php      { 
     background-color: #777BB4;
  }
+ .projects{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+ }
+ .projects > .project-card{
+  color: #1a1a1a;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+ }
+ .project-card >h4{
+  color: var(--green);
+  font-size: larger;
+  font-weight: bolder;
+ }
+
  
 @media (max-width: 768px) {
   .card-holder > .card-container{
