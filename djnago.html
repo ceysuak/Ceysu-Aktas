@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSphere - Campus Club Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        code {
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        pre {
+            background: #1e293b;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech {
+            background: #2563eb;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #0f172a;
+            color: white;
+        }
+        
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>UniSphere</h1>
+    <p>Campus Club Management System</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>About the Project</h2>
+
+        <p>
+            UniSphere is a Django-based web application developed for managing
+            university clubs, memberships, and events.
+        </p>
+
+        <br>
+
+        <p>
+            The system implements Role-Based Access Control (RBAC) and supports
+            three user roles:
+        </p>
+
+        <ul>
+            <li>Student</li>
+            <li>Club Manager</li>
+            <li>Administrator</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Documentation</h2>
+
+        <p>
+            For detailed instructions on how to use the system, please refer to the
+            included <code>User_Manual.pdf</code>.
+        </p>
+
+        <br>
+
+        <p>The User Manual covers:</p>
+
+        <ul>
+            <li>User registration and authentication</li>
+            <li>Profile management</li>
+            <li>Club management</li>
+            <li>Event management</li>
+            <li>Administrator functions</li>
+            <li>Role permissions</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Project Structure</h2>
+
+        <ul>
+            <li><strong>campus_project</strong> - Main project configuration and routing</li>
+            <li><strong>accounts</strong> - Authentication and profile management</li>
+            <li><strong>club_management</strong> - Club and membership operations</li>
+            <li><strong>event_management</strong> - Event and participant management</li>
+            <li><strong>templates</strong> - Frontend templates</li>
+            <li><strong>static</strong> - CSS, images, and assets</li>
+            <li><strong>Database</strong> - User, club, membership, and event data</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technologies Used</h2>
+
+        <div class="tech-list">
+            <div class="tech">Python</div>
+            <div class="tech">Django</div>
+            <div class="tech">SQLite</div>
+            <div class="tech">HTML</div>
+            <div class="tech">CSS</div>
+            <div class="tech">Tailwind CSS</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Running the Project</h2>
+
+        <pre>
+python manage.py migrate
+python manage.py runserver
+        </pre>
+
+        <br>
+
+        <p>Application URL:</p>
+
+        <pre>
+http://127.0.0.1:8000/
+        </pre>
+
+        <p>
+            To access the admin panel, add <code>/admin</code> to the URL.
+        </p>
+    </section>
+
+    <section>
+        <h2>Authors</h2>
+
+        <ul>
+            <li>Setareh Ehsani</li>
+            <li>Ceysu Aktaş</li>
+        </ul>
+    </section>
+<section class="pictures">
+    <h3>Pictures from the project</h3>
+    <div class="picture-gallery">
+        <img src="club-management/welcome.png" width="500px" alt="Django Project Screenshot 1">
+        <img src="club-management/manager-dashboard.png" width="500px" alt="Django Project Screenshot 2">
+        <img src="club-management/club-manager.png" width="500px" alt="Django Project Screenshot 3">
+        <img src="club-management/clubs.png" width="500px" alt="Django Project Screenshot 4">
+        <img src="club-management/club-page.png" width="500px" alt="Django Project Screenshot 5">
+        <img src="club-management/admin-panel.png" width="500px" alt="Django Project Screenshot 6">
+    </div>
+</section>
+</div>
+
+
+
+<footer>
+    © 2026 UniSphere - Campus Club Management System
+</footer>
+
+</body>
+</html>

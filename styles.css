@@ -163,7 +163,12 @@ main {
   justify-content: center;
   align-items: center;
 }
-
+.card-container > .zero {
+  background-image: url(unisphere.png);
+  background-size: cover;
+   text-shadow:4px 1px 3px #1a1a1a;
+  background-position: center;
+}
 .card-container > .one {
   background-image: url(Ekran\ görüntüsü\ 2026-04-21\ 022548.png);
   background-size: cover;
@@ -229,6 +234,16 @@ footer {
   transform: translateY(-3px);
   opacity: 0.85;
 }
+.project-card{
+  text-decoration: none;
+}
+.detail-btn{
+  background-color: #1a1a1a;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: bold;
+}
 
 .html     {
      background-color: #E34F26; 
@@ -241,6 +256,9 @@ footer {
      }
 .python   {
      background-color: #3776AB;
+     }
+.Django   {
+     background-color: #228030;
      }
 .mysql    {
      background-color: #00758F; 
@@ -257,3 +275,10 @@ footer {
 .php      { 
     background-color: #777BB4;
  }
+ 
+@media (max-width: 768px) {
+  .card-holder > .card-container{
+    flex-direction: column;
+  }
+}
+
